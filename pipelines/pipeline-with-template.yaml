@@ -77,7 +77,7 @@ stages :
 
   - stage: bootstrap
     dependsOn: [terraform_apply]
-    condition: or(ne('${{ parameters.Action }}', 'Destroy'), ne('${{ parameters.Action }}', 'Plan')) 
+    condition: contains('${{ parameters.Action }}', 'Apply') 
     jobs:
       - template: templates/az-cli.yaml
 
