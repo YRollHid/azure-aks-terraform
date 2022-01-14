@@ -27,9 +27,9 @@ module "aks" {
 	default_node_pool = {
 		name = "defaultnp01"
 		enable_auto_scaling = true
-		node_count = 2
-		min_count = 2
-		max_count = 5
+		node_count = 1
+		min_count = 1
+		max_count = 2
 		vm_size = "Standard_D2s_v3"
 		type    = "VirtualMachineScaleSets"
 		os_disk_size_gb = 30
