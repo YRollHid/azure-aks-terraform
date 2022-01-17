@@ -38,8 +38,8 @@ module "aks" {
 
 	user_node_pools = {
 		usernp1 = {
-			vm_size = "Standard_D4s_v3"
-			node_count = 3
+			vm_size = "Standard_D8s_v3"
+			node_count = 2
 			node_labels = null
 			node_taints = []
 			mode = "User"
