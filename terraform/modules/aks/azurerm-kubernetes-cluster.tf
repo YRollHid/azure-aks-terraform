@@ -57,6 +57,9 @@ resource azurerm_kubernetes_cluster dev {
     kube_dashboard {
       enabled = false
     }
+    http_application_routing {
+      enabled = true
+    }
   }
   
   sku_tier = var.aks_settings.sku_tier
