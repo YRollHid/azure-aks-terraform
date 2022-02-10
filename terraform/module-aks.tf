@@ -40,6 +40,7 @@ module "aks" {
 		usernp1 = {
 			enable_auto_scaling = true
 			vm_size = "Standard_D8s_v3"
+			type    = "VirtualMachineScaleSets"
 			node_count = 1
 			min_count = 1
 			max_count = 2
