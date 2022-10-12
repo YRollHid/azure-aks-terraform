@@ -1,5 +1,5 @@
 # These values are not used as they are overwritten by the command line (-var flag)
-prefix   = "yrh02"
+prefix   = "yrhpwc"
 suffix   = "gbb"
 location = "eastus2"
 
